@@ -1,4 +1,4 @@
-#![cfg(any(target_os = "macos", target_os = "ios"))]
+#![cfg(any(target_os = "macos", target_os = "ios", target_os = "visionos"))]
 
 extern crate objc;
 
@@ -20,4 +20,3 @@ fn use_sel() {
     let _sel = sel!(description);
     let _sel = sel!(setObject:forKey:);
 }
-
